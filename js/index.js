@@ -16,7 +16,7 @@ function deathReason(){
 	document.getElementById(`everything`).innerHTML = `
   <div class="game-over-content">
     <img src="img/horde.jpg" class="death">
-    <a href="start.html"><div class="button restart">RESTART</div></a>
+    <a href="index.html"><div class="button restart">RESTART</div></a>
     <div id="game-over"><p>You where overwhelmed by a massive hoard of goblins. 
 			You died a gruesome death. Perhaps the main entrance was not the best idea. 
 			However, it was a noble effort.</p>
