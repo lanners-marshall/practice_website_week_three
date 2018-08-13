@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  	 <link href="css/index.css" rel="stylesheet">
+  	 <script src="js/index.js"></script>
+  	 <script src="js/content.js"></script>
+  	 <title>Dungeon Quest</title>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+</head>
+<div class="container">
+	<section class="main-content">
+		<div class="character-info">
+			<div class="status"></div><br>
+			<div class="weapons"></div><br>
+			<div class="inventory"></div><br>
+			<div class="equiped"></div><br>
+			<div class="button" onclick="equipNew();">Change Weapon</div>
+			<form>
+				<input type="text" id="equipHero"></input>
+			</form><br>
+		</div>
+		<img src="img/cave.jpg" class="current-image">
+	</section>
+	<section class="main-info">
+		<div class="info-section">
+			<p>Tired and alone. It's been 3 days since you lost your party in a goblin ambush deep in the dwarven caverns. A dangerous dwarven expedition you took, in part, to find your mother who has gone missing one year ago. To the right In the distance you see an entrance to a dungeon. To the left in the distance you saw a goblin walk stealthily into the shadows. Go Left to follow goblin. Go Right to Dungeon entrance.</p>
+		</div>
+		<div class="info-section">
+			<a href="riddle.html"><div class="button">GO LEFT</div></a>
+			<a href="enterance.html"><div class="button">GO RIGHT</div></a>
+		</div>
+	</section>
+</div><!-- //end of container -->
+</html>
