@@ -14,31 +14,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 </head>
-<div class="container everything">
-	<section class="main-content">
-		<div class="character-info">
-			<div class="status"></div><br>
-			<div class="weapons"></div><br>
-			<div class="inventory"></div><br>
-			<div class="equiped"></div><br>
-			<div class="button" onclick="equipNew();">Change Weapon</div>
-			<form>
-				<input type="text" id="equipHero"></input>
-			</form><br>
-		</div>
-		<img src="img/monster.jpg" class="current-image">
-	</section>
-	<section class="main-info">
-		<div class="info-section">
-			<p>As you enter the room a large monster comes your way! Brace for battle!</p>
-			<div id="your-attack"></div>
-			<div id="healing"></div>
-			<div id="monster-attack"></div>
-		</div>
-		<div class="info-section">
-			<div class="button" onclick="fight1()">Attack</div>
-			<div class="button" onclick="usePotion1()">Use Potion</div>
-		</div>
-	</section>
-</div>
+<body>
+	<div class="container everything">
+		<section class="main-content">
+			<div class="character-info">
+				<div class="status"></div><br>
+				<div class="weapons"></div><br>
+				<div class="inventory"></div><br>
+				<div class="equiped"></div><br>
+				<div class="button" onclick="equipNew();">Change Weapon</div>
+				<form>
+					<input type="text" id="equipHero"></input>
+				</form><br>
+			</div>
+			<img src="img/monster.jpg" class="current-image">
+		</section>
+		<section class="main-info">
+			<div class="info-section">
+				<p>As you enter the room a large monster comes your way! Brace for battle!</p>
+				<div id="your-attack"></div>
+				<div id="healing"></div>
+				<div id="monster-attack"></div>
+			</div>
+			<div class="info-section">
+				<div class="button" onclick="fight1()">Attack</div>
+				<div class="button" onclick="usePotion1()">Use Potion</div>
+			</div>
+		</section>
+	</div>
+</body>
 </html>
