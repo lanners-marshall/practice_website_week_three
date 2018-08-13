@@ -265,14 +265,6 @@ function usePotion1(){
 //for rob ------------------------------------------
 
 function fight2(){
-  if (mainHero.hp <= 0) {
-    document.getElementsByClassName(`everything`)[0].innerHTML = `
-    <div class="game-over-content">
-      <img src="img/died.jpg" class="death">
-      <a href="index.html"><div class="button restart">RESTART</div></a>
-      <div id="game-over"><p>You are overcome from your wounds and have died during battle. You fought bravely.</p></div>
-    </div>`;
-  }
   if(rob.hp < 20) {
     mainHero.ending();
     } else {
@@ -280,6 +272,14 @@ function fight2(){
     mainHero.attack(rob);
     rob.damage(mainHero);
     upDate();
+    if (mainHero.hp <= 0) {
+    document.getElementsByClassName(`everything`)[0].innerHTML = `
+    <div class="game-over-content">
+      <img src="img/died.jpg" class="death">
+      <a href="index.html"><div class="button restart">RESTART</div></a>
+      <div id="game-over"><p>You are overcome from your wounds and have died during battle. You fought bravely.</p></div>
+    </div>`;
+    }
   }
 }
 
